@@ -1,13 +1,15 @@
-# Payment server for awallet
+# Crypto Pockets server
 
-The payment server for handling free transfers on AlphaWallet
+This server creates and cashes Crypto pockets
 
-## Request gas payment for transfer
+Follow the instructions on the prompt when running.
 
-### POST /claimToken/{address}/{indices}/{v}/{r}/{s}
-* @param address address who is to claim the ticket
-* @param indices the ticket indices in the smart contract representing tickets
-* @param v signature component
-* @param r signature component
-* @param s signature component
-* @return ResponseEntity
+To setup:
+
+you will need to place a 'keys.secret' in the root project directory with your Infura key and private key with your funds on like this:
+
+<infurakey>,<privatekey>,END
+
+eg
+
+12345ggh343454hgsdsdh23kjhser,012FABB2323ABA2334343A...ABC123,END
